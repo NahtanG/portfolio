@@ -190,3 +190,35 @@ nav:hover {
 .linkedin {
   white-space: nowrap;
 }
+
+/* file list */
+.file_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.file_list li {
+  margin-bottom: 10px;
+}
+
+.file_list a {
+  display: block;
+  color: #7a7c80;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+  border: 1px solid #ccc; /* Added box border */
+  padding: 5px; /* Added padding */
+}
+
+.file_list a:hover {
+  color: #42a5f5;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "", sans-serif;
+}
