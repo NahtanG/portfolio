@@ -52,6 +52,13 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "", sans-serif;
+}
+
 /* bouton CV */
 .flexbox-button {
   display: flex;
@@ -214,11 +221,4 @@ nav:hover {
 
 .file_list a:hover {
   color: #42a5f5;
-}
-
-.title {
-  font-size: 2rem;
-  color: #fff;
-  margin-bottom: 10px;
-  font-family: "", sans-serif;
 }
