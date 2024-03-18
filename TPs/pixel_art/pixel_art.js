@@ -16,12 +16,15 @@ var colors = [
   "red",
   "orange",
   "yellow",
+  "lightgreen",
   "green",
   "blue",
   "indigo",
+  "magenta",
   "violet",
   "pink",
-  "brown",
+  "darkblue",
+  "lightblue",
 ];
 
 var selectedColor = "black"; // Couleur par défaut
