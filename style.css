@@ -1,0 +1,192 @@
+/*barre de navigation*/
+.barre-nav {
+  background-color: #1e1f22;
+  padding: 10px 20px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.barre-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.barre-nav li {
+  margin-right: 20px;
+}
+
+.barre-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.barre-nav a:hover {
+  color: #42a5f5;
+}
+
+/*grille*/
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #101214;
+  color: #7a7c80;
+}
+
+h2,
+.white {
+  color: #fff;
+}
+
+a {
+  color: #7a7c80;
+  text-decoration: none;
+}
+
+/* bouton CV */
+.flexbox-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #09386b;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.5s ease, background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.download-button:active {
+  transform: scale(0.9);
+}
+
+/* section 1 */
+.section-1 {
+  padding: 0;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.section-1 p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section-1 h2 {
+  font-size: 1.7rem;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.section-1 a {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+/* section 2 */
+.section-2 {
+  width: 70%;
+}
+
+.section-2 h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.section-2 p {
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.section-2 a {
+  display: block;
+  padding: 5px;
+  font-size: 1.2rem;
+  padding-left: 0;
+  width: 100px;
+}
+
+.section-2 a:hover {
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.section-2 a:active {
+  transform: scale(0.9);
+}
+
+.section-2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-1 a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+.section-1 {
+  padding: 0;
+  padding-top: 5rem;
+}
+.section-2 {
+  padding: 0;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+}
+
+nav {
+  display: block;
+  padding: 5px;
+  font-size: 1.2rem;
+  padding-left: 0;
+  width: 100px;
+}
+
+nav:hover {
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.project h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.project {
+  padding-left: 1.5rem;
+}
+
+.linkedin {
+  white-space: nowrap;
+}
