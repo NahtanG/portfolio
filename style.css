@@ -28,6 +28,25 @@
   color: #42a5f5;
 }
 
+.profile_image {
+  width: 140px; /* Ajuster la taille de la photo si nécessaire */
+  height: auto; /* Hauteur automatique pour maintenir les proportions */
+  margin-top: 0.5rem;
+  background-color: #fff;
+  border-radius: 25%;
+  box-shadow: 0 3px 5px var(--secondary-shadow);
+  padding: 5px;
+  margin: 10px;
+}
+
+.nom-prenom {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
 /*grille*/
 .grid-2 {
   display: grid;
@@ -64,16 +83,18 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-left: 0;
 }
 
 .download-button {
+  scale: 1.2;
   display: inline-block;
   background-color: #09386b;
   color: #fff;
   padding: 10px 15px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: transform 0.5s ease, background-color 0.3s;
 }
 
@@ -88,9 +109,10 @@ a {
 
 /* section 1 */
 .section-1 {
-  padding: 0;
-  padding-top: 2rem;
-  text-align: center;
+  display: flex;
+  align-items: center; /* Aligner les éléments verticalement */
+  gap: 20px; /* Espace entre la photo et le nom */
+  margin-left: 2rem;
 }
 
 .section-1 p {
@@ -118,6 +140,7 @@ a {
 .section-2 h2 {
   font-size: 1.7rem;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .section-2 p {
@@ -221,4 +244,33 @@ nav:hover {
 
 .file_list a:hover {
   color: #42a5f5;
+}
+
+/* skills */
+.skills {
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 50px; /* Decreased width */
+  height: 50px; /* Decreased height */
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
 }
