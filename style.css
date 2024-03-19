@@ -1,33 +1,31 @@
 /*barre de navigation*/
 .barre-nav {
-  background-color: #1e1f22;
-  padding: 10px 20px;
-  white-space: nowrap;
-  width: 100%;
+  background-color: #333;
+  overflow: hidden;
 }
 
-.barre-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.barre-nav li {
-  margin-right: 20px;
-}
-
+/* Style the links inside the navigation bar */
 .barre-nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: #fff;
-  font-size: 1.2rem;
-  transition: color 0.3s;
+  font-size: 17px;
 }
 
+/* Change the color of lvnks on hover */
 .barre-nav a:hover {
-  color: #42a5f5;
+  background-color: #ddd;
+  color: black;
 }
 
+/* Add a color to the active/current link */
+.barre-nav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+/* photo de profil */
 .profile_image {
   width: 140px; /* Ajuster la taille de la photo si nécessaire */
   height: auto; /* Hauteur automatique pour maintenir les proportions */
@@ -111,7 +109,7 @@ a {
 .section-1 {
   display: flex;
   align-items: center; /* Aligner les éléments verticalement */
-  gap: 20px; /* Espace entre la photo et le nom */
+  gap: 1rem;
   margin-left: 2rem;
 }
 
@@ -223,17 +221,17 @@ nav:hover {
 
 /* file list */
 .file_list {
-  margin: 0;
+  margin: 2rem 0 0 0.2rem;
   padding: 0;
   list-style: none;
 }
 
 .file_list li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .file_list a {
-  display: block;
+  display: inline-block;
   color: #7a7c80;
   text-decoration: none;
   font-size: 1.2rem;
@@ -243,7 +241,7 @@ nav:hover {
 }
 
 .file_list a:hover {
-  color: #42a5f5;
+  color: #04aa6d;
 }
 
 /* skills */
@@ -296,4 +294,26 @@ nav:hover {
   background-color: #fff;
   width: 3rem;
   height: auto;
+}
+
+/* nav projets */
+.nav-project {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.nav-project a {
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  color: #b1b1b1;
+  transition: 0.3s;
+}
+
+.nav-project a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
 }
