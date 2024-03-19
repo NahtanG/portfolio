@@ -274,3 +274,26 @@ nav:hover {
   padding: 20px;
   margin: 10px;
 }
+
+/* contact */
+.logo_links {
+  display: flex;
+  gap: 1px; /* Ajoutez un espace de 10 pixels entre les logos */
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo_links .logo {
+  display: flex; /* Permet de centrer le contenu verticalement */
+  justify-content: left; /* Centre le contenu horizontalement */
+}
+
+.logo_link {
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 3rem;
+  height: auto;
+}
