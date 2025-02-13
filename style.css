@@ -2,11 +2,12 @@
 .barre-nav {
   background-color: #333;
   overflow: hidden;
+  text-align: center; /* Center align text */
 }
 
 /* Style the links inside the navigation bar */
 .barre-nav a {
-  float: left;
+  display: inline-block; /* Change float to inline-block */
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -14,7 +15,7 @@
   font-size: 17px;
 }
 
-/* Change the color of lvnks on hover */
+/* Change the color of links on hover */
 .barre-nav a:hover {
   background-color: #ddd;
   color: black;
@@ -25,6 +26,7 @@
   background-color: #04aa6d;
   color: white;
 }
+
 /* photo de profil */
 .profile_image {
   width: 140px; /* Ajuster la taille de la photo si nécessaire */
@@ -34,7 +36,8 @@
   border-radius: 25%;
   box-shadow: 0 3px 5px var(--secondary-shadow);
   padding: 5px;
-  margin: 10px;
+  margin: 10px auto; /* Center align image */
+  display: block; /* Ensure image is block level */
 }
 
 .nom-prenom {
@@ -43,12 +46,14 @@
   color: #fff;
   font-size: 1.5rem;
   margin-left: 10px;
+  text-align: center; /* Center align text */
 }
 
 /*grille*/
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  text-align: center; /* Center align text */
 }
 
 body {
@@ -57,16 +62,19 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #101214;
   color: #7a7c80;
+  text-align: center; /* Center align text */
 }
 
 h2,
 .white {
   color: #fff;
+  text-align: center; /* Center align text */
 }
 
 a {
   color: #7a7c80;
   text-decoration: none;
+  text-align: center; /* Center align text */
 }
 
 .title {
@@ -74,6 +82,7 @@ a {
   color: #fff;
   margin-bottom: 10px;
   font-family: "", sans-serif;
+  text-align: center; /* Center align text */
 }
 
 /* bouton CV */
@@ -108,7 +117,8 @@ a {
 /* section 1 */
 .section-1 {
   display: flex;
-  align-items: center; /* Aligner les éléments verticalement */
+  flex-direction: column; /* Change to column */
+  align-items: center; /* Center align items */
   gap: 1rem;
   margin-left: 2rem;
 }
@@ -133,18 +143,20 @@ a {
 /* section 2 */
 .section-2 {
   width: 70%;
+  margin: auto; /* Center align section */
 }
 
 .section-2 h2 {
   font-size: 1.7rem;
   margin-bottom: 10px;
-  text-align: left;
+  text-align: center; /* Center align text */
 }
 
 .section-2 p {
   font-size: 1.1rem;
   padding-bottom: 10px;
   margin: 0;
+  text-align: center; /* Center align text */
 }
 
 .section-2 a {
@@ -153,6 +165,7 @@ a {
   font-size: 1.2rem;
   padding-left: 0;
   width: 100px;
+  margin: auto; /* Center align links */
 }
 
 .section-2 a:hover {
@@ -181,10 +194,12 @@ a {
 .grid-2 {
   grid-template-columns: 1fr;
 }
+
 .section-1 {
   padding: 0;
   padding-top: 5rem;
 }
+
 .section-2 {
   padding: 0;
   padding-left: 1.5rem;
@@ -197,6 +212,7 @@ nav {
   font-size: 1.2rem;
   padding-left: 0;
   width: 100px;
+  margin: auto; /* Center align nav */
 }
 
 nav:hover {
@@ -224,6 +240,7 @@ nav:hover {
   margin: 2rem 0 0 0.2rem;
   padding: 0;
   list-style: none;
+  text-align: center; /* Center align text */
 }
 
 .file_list li {
@@ -248,8 +265,23 @@ nav:hover {
 .skills {
   max-width: 1000px;
   margin: auto;
-  text-align: left;
   margin-top: 2.5rem;
+  text-align: center; /* Center align text */
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align items */
+  align-items: center;
+}
+
+.skills .first-set,
+.skills .second-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between the icons as needed */
+  justify-content: center; /* Center align items */
 }
 
 .skill-header {
@@ -276,24 +308,26 @@ nav:hover {
 /* contact */
 .logo_links {
   display: flex;
-  gap: 1px; /* Ajoutez un espace de 10 pixels entre les logos */
+  gap: 0.5rem; /* Adjust the gap between the logos */
   margin-left: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  justify-content: center; /* Center align items */
 }
 
 .logo_links .logo {
   display: flex; /* Permet de centrer le contenu verticalement */
-  justify-content: left; /* Centre le contenu horizontalement */
+  justify-content: center; /* Centre le contenu horizontalement */
 }
 
 .logo_link {
   border: 1px solid #fff;
-  padding: 5px;
+  padding: 1px; /* Reduced padding */
   border-radius: 50%;
   background-color: #fff;
-  width: 3rem;
-  height: auto;
+  width: 3.5rem; /* Increased width */
+  height: 3.5rem; /* Increased height */
+  margin: 0; /* Remove margin */
 }
 
 /* nav projets */
@@ -303,6 +337,7 @@ nav:hover {
   margin-top: 1rem;
   flex-shrink: 0;
   white-space: nowrap;
+  justify-content: center; /* Center align items */
 }
 
 .nav-project a {
