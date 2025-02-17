@@ -124,6 +124,7 @@ a {
   flex-direction: column; /* Change to column */
   align-items: center; /* Center align items */
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .section-1 p {
@@ -382,6 +383,8 @@ nav:hover {
   padding: 5px; /* Add padding for spacing */
   border-radius: 2px; /* Optional: Add border radius for rounded corners */
 }
+
+/* footer */
 
 /* nav projets */
 .nav-project {
