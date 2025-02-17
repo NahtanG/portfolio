@@ -42,11 +42,13 @@
 
 .nom-prenom {
   margin: 0;
-  padding: 0;
+  padding: 5px; /* Add padding for spacing */
   color: #fff;
   font-size: 1.5rem;
-  margin-left: 10px;
   text-align: center; /* Center align text */
+  border: 1px solid #ccc; /* Use a lighter color and thinner border */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+  background-color: #333; /* Optional: Add background color for contrast */
 }
 
 /*grille*/
@@ -97,7 +99,7 @@ a {
 .download-button {
   scale: 1.2;
   display: inline-block;
-  background-color: #09386b;
+  background-color: #713952;
   color: #fff;
   padding: 10px 15px;
   text-decoration: none;
@@ -108,7 +110,7 @@ a {
 }
 
 .download-button:hover {
-  background-color: #0056b3;
+  background-color: #d40647;
   transform: scale(1.05);
 }
 
@@ -122,7 +124,6 @@ a {
   flex-direction: column; /* Change to column */
   align-items: center; /* Center align items */
   gap: 1rem;
-  margin-left: 2rem;
 }
 
 .section-1 p {
@@ -203,9 +204,9 @@ a {
 }
 
 .section-2 {
-  padding: 0;
-  padding-left: 1.5rem;
-  padding-top: 2rem;
+  width: 70%;
+  margin: auto; /* Center align section */
+  text-align: left; /* Align text to the left */
 }
 
 nav {
@@ -224,13 +225,27 @@ nav:hover {
   transition: 0.2s;
 }
 
+#projects {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  background-color: #333; /* Add background color */
+  color: #fff; /* Ensure text color contrasts with background */
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
 .project h2 {
   font-size: 1.7rem;
   margin-bottom: 10px;
+  background-color: #333; /* Add background color */
+  color: #fff; /* Ensure text color contrasts with background */
+  padding: 10px; /* Add padding for spacing */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
 }
 
 .project {
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .linkedin {
@@ -308,28 +323,59 @@ nav:hover {
 }
 
 /* contact */
+
+.contact {
+  margin-top: 2rem;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.contact h2 {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
 .logo_links {
   display: flex;
   gap: 0.5rem; /* Adjust the gap between the logos */
   margin-left: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-  justify-content: center; /* Center align items */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align items to the top */
+  width: 100%; /* Ensure it takes full width */
 }
 
 .logo_links .logo {
   display: flex; /* Permet de centrer le contenu verticalement */
-  justify-content: center; /* Centre le contenu horizontalement */
+  justify-content: flex-start; /* Align items to the left */
 }
 
 .logo_link {
+  display: block;
   border: 1px solid #fff;
   padding: 1px;
   border-radius: 50%;
   background-color: #fff;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
   margin: 0;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.logo_link:hover {
+  transform: scale(1.15); /* Scale up the logo on hover */
+}
+
+#contact {
+  display: block;
+  text-align: left;
+  margin-right: 1rem;
+  margin-bottom: 2px;
+  background-color: #333; /* Add background color */
+  color: #fff; /* Ensure text color contrasts with background */
+  padding: 5px; /* Add padding for spacing */
+  border-radius: 2px; /* Optional: Add border radius for rounded corners */
 }
 
 /* nav projets */
