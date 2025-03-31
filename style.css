@@ -410,3 +410,93 @@ nav:hover {
   cursor: pointer;
   transition: 0.3s;
 }
+
+/* grid cards page veuilles */
+
+.intro-paragraph {
+  font-size: 1.2rem; /* Taille de police légèrement augmentée */
+  color: #eeeeee; /* Couleur sombre pour une meilleure lisibilité */
+  line-height: 1.8; /* Hauteur de ligne pour une meilleure lisibilité */
+  text-align: justify; /* Justifier le texte */
+  margin: 20px auto; /* Espacement autour du paragraphe */
+  max-width: 800px; /* Limiter la largeur pour un meilleur rendu */
+  padding: 10px; /* Ajouter un peu d'espace interne */
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 20px; /* Espacement entre les cartes */
+  margin: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Agrandissement au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+/* Styles pour les balises <h1> et <p> dans les cartes */
+.card h1 {
+  font-size: 1.5rem; /* Taille de police pour le titre */
+  color: #333; /* Couleur du texte */
+  margin-bottom: 10px; /* Espacement sous le titre */
+  text-align: center; /* Centrer le texte */
+}
+
+.card p {
+  font-size: 1rem; /* Taille de police pour le paragraphe */
+  color: #555; /* Couleur du texte */
+  line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+  text-align: justify; /* Justifier le texte */
+  margin: 0 10px; /* Espacement horizontal */
+  flex-grow: 1; /* Permet au paragraphe de prendre l'espace disponible */
+}
+
+.article-date,
+.article-source {
+  margin-top: auto; /* Pousse ces éléments vers le bas */
+  text-align: right; /* Aligner à droite */
+}
+
+.article-date {
+  font-size: 1rem; /* Augmenter légèrement la taille de la police */
+  color: #333; /* Couleur plus sombre pour plus de contraste */
+  font-weight: bold; /* Mettre en gras pour attirer l'attention */
+  margin-top: 10px; /* Espacement au-dessus */
+  text-align: right; /* Aligner à droite */
+}
+
+.article-source {
+  font-size: 1rem; /* Augmenter légèrement la taille de la police */
+  color: #04aa6d; /* Couleur verte pour la différencier */
+  font-weight: bold; /* Mettre en gras pour attirer l'attention */
+  margin-top: 5px; /* Espacement au-dessus */
+  text-align: right; /* Aligner à droite */
+  font-style: italic; /* Style italique pour un effet distinct */
+}
+
+.card a {
+  color: #04aa6d; /* Couleur verte par défaut */
+  text-decoration: underline; /* Soulignement par défaut */
+  transition:
+    color 0.3s ease,
+    text-decoration 0.3s ease; /* Transition fluide */
+}
+
+.card a:hover {
+  color: #07651d; /* Couleur plus foncée au survol */
+  text-decoration: none; /* Supprimer le soulignement au survol */
+  font-weight: bold; /* Mettre en gras pour attirer l'attention */
+}
