@@ -431,20 +431,42 @@ nav:hover {
 }
 
 .card {
+  position: relative; /* Nécessaire pour positionner le pseudo-élément */
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
   padding: 20px;
   text-align: center;
   font-size: 1.2rem;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  overflow: hidden; /* Empêche le pseudo-élément de dépasser les bords arrondis */
 }
 
 .card:hover {
-  transform: scale(1.05); /* Agrandissement au survol */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+  transform: scale(1.05); /* Agrandit la carte au survol */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre encore plus marquée au survol */
+}
+
+.card::before {
+  content: ''; /* Nécessaire pour afficher le pseudo-élément */
+  position: absolute;
+  top: 0; /* Positionner dans le coin supérieur droit */
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 85px 85px 0; /* Augmenter la largeur et la hauteur du triangle */
+  border-color: transparent #04aa6d transparent transparent; /* Couleur du triangle */
+  z-index: 1; /* S'assurer que le vignetage est au-dessus du contenu */
+  pointer-events: none; /* Empêche toute interaction avec le pseudo-élément */
+  opacity: 0.5; /* Rendre l'effet plus subtil */
+  transition: opacity 0.3s ease; /* Transition pour un effet fluide */
+}
+
+.card:hover::before {
+  opacity: 0.8; /* Rendre le triangle plus visible au survol */
 }
 
 /* Styles pour les balises <h1> et <p> dans les cartes */
