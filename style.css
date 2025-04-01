@@ -600,6 +600,41 @@ nav:hover {
   right: 10px; /* Position the next button to the right of the carousel */
 }
 
+/* Project skills section */
+.project-details ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between skill cards */
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.project-details li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 50px; /* Smaller size for project skills */
+  height: 50px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-details li:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-details li img {
+  width: 100%;
+  height: auto;
+}
+
 /* Back to Top button */
 .back-to-top {
   position: fixed;
