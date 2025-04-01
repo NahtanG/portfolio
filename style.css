@@ -361,18 +361,29 @@ nav:hover {
 
 .logo_link {
   display: block;
-  border: 1px solid #fff;
-  padding: 1px;
-  border-radius: 50%;
-  background-color: #fff;
-  width: 2.2rem;
-  height: 2.2rem;
+  border: 1px solid #ccc; /* Lighter border for a subtle look */
+  padding: 3px; /* Reduced padding for a smaller size */
+  border-radius: 25px; /* Increased border radius for a more rounded look */
+  background-color: #f9f9f9; /* Softer background color */
+  width: 6rem; /* Slightly smaller width */
+  height: 2.5rem; /* Reduced height */
   margin: 0;
-  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease; /* Softer transition */
+  display: flex; /* Center the image inside the button */
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_link img {
+  width: auto; /* Maintain the aspect ratio */
+  height: 70%; /* Slightly smaller image size */
 }
 
 .logo_link:hover {
-  transform: scale(1.15); /* Scale up the logo on hover */
+  background-color: #e6e6e6; /* Subtle hover effect */
+  transform: scale(1.05); /* Slightly smaller scale on hover */
 }
 
 #contact {
@@ -521,4 +532,96 @@ nav:hover {
   color: #07651d; /* Couleur plus foncée au survol */
   text-decoration: none; /* Supprimer le soulignement au survol */
   font-weight: bold; /* Mettre en gras pour attirer l'attention */
+}
+
+/* Project sections */
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 10px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.carousel:hover img {
+  transform: scale(1.05);
+}
+
+.project-details {
+  flex: 1;
+  color: #fff;
+}
+
+.project-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.project-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-details li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Back to Top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #04aa6d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #07651d;
+  transform: scale(1.1);
+}
+
+.back-to-top:active {
+  transform: scale(0.9);
 }
