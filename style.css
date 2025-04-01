@@ -537,62 +537,67 @@ nav:hover {
 /* Project sections */
 .project-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Ensure the carousel and details are side by side */
+  align-items: center;
+  gap: 20px; /* Add spacing between the carousel and details */
   margin: 20px 10px;
   padding: 20px;
   background-color: #1e1e1e;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%; /* Ensure the section takes full width */
 }
 
 .carousel {
-  flex: 1;
+  flex: 0 0 40%; /* Explicitly set the carousel to take 40% of the section width */
+  max-width: 40%; /* Ensure the carousel does not exceed 40% */
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Enable positioning for buttons */
   overflow: hidden;
-  border-radius: 10px;
-  margin-right: 20px;
+  width: 100%; /* Ensure the carousel container takes full width */
 }
 
-.carousel img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  transition: transform 0.5s ease;
+.carousel-image {
+  display: none;
+  width: 100%; /* Ensure the image takes the full width of the carousel */
+  height: auto; /* Maintain the aspect ratio */
+  transition: opacity 0.5s ease;
 }
 
-.carousel:hover img {
-  transform: scale(1.05);
+.carousel-image.active {
+  display: block;
 }
 
-.project-details {
-  flex: 1;
-  color: #fff;
-}
-
-.project-details h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-
-.project-details p {
+.carousel-btn {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  z-index: 10;
 }
 
-.project-details h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.project-details ul {
-  list-style: none;
-  padding: 0;
+.prev-btn {
+  left: 10px; /* Position the previous button to the left of the carousel */
 }
 
-.project-details li {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
+.next-btn {
+  right: 10px; /* Position the next button to the right of the carousel */
 }
 
 /* Back to Top button */
