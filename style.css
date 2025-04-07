@@ -78,12 +78,20 @@
   }
 
   .skills .skills-wrapper {
-    display: flex; /* Change to flex layout */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    display: grid; /* Change to grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Display 3 icons per row */
     gap: 10px; /* Add spacing between icons */
-    justify-content: flex-start; /* Align icons to the start */
-    align-items: center; /* Center icons vertically */
+    justify-content: center; /* Center the grid */
+    align-items: center; /* Align icons vertically */
+  }
+
+  @media (max-width: 480px) {
+    .skills .skills-wrapper {
+      grid-template-columns: repeat(
+        4,
+        1fr
+      ); /* Display 4 icons per row on smaller screens */
+    }
   }
 
   .skills .icon-card {
