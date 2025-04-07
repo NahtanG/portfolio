@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
   body {
     padding: 5px;
+    font-size: 1.1rem; /* Increase base font size for better readability */
   }
 
   .grid-2 {
@@ -39,7 +40,16 @@
   }
 
   .skills-wrapper {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Display icons in rows of 8 */
+    gap: 10px; /* Add spacing between icons */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills .icon-card {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
   }
 
   .file_list {
@@ -53,10 +63,12 @@
   .logo_links {
     flex-direction: column;
     align-items: center;
+    gap: 15px; /* Increase spacing between logos */
   }
 
   .logo_link {
-    width: 8rem;
+    width: 7rem; /* Adjust logo size */
+    height: 3rem;
   }
 
   .nav-project {
@@ -75,7 +87,7 @@
   }
 
   .nom-prenom {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increase font size for better visibility */
   }
 
   .title {
@@ -86,13 +98,14 @@
   .section-2 h2,
   .project h2,
   .contact h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* Adjust heading size */
   }
 
   .section-1 p,
   .section-2 p,
   .card p {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Increase paragraph font size */
+    line-height: 1.6; /* Improve readability */
   }
 
   .back-to-top {
@@ -114,7 +127,6 @@
   }
 
   .section-1 h2.nom-prenom {
-    font-size: 1.2rem; /* Réduire la taille de la police */
     margin: 10px 0; /* Ajouter un espacement vertical */
   }
 
@@ -129,45 +141,18 @@
     padding: 10px;
   }
 
-  .section-2 h2 {
-    font-size: 1.4rem; /* Réduire la taille des titres */
-  }
-
   .section-2 p {
-    font-size: 1rem; /* Réduire la taille du texte */
     line-height: 1.5; /* Améliorer la lisibilité */
   }
 
   .skills {
-    flex-direction: column;
     gap: 15px;
     padding: 10px;
-  }
-
-  .skills .skills-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .skills .icon-card {
-    width: 40px; /* Réduire la taille des icônes */
-    height: 40px;
   }
 
   .contact {
     padding: 10px;
     text-align: center;
-  }
-
-  .contact .logo_links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Ajouter un espacement entre les logos */
-  }
-
-  .contact .logo_link {
-    width: 6rem; /* Ajuster la taille des logos */
-    height: 2.5rem;
   }
 
   .barre-nav a {
