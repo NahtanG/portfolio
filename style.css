@@ -1,6 +1,8 @@
 @media (max-width: 768px) {
   body {
     padding: 5px;
+    font-size: 1rem; /* Taille de police uniforme */
+    line-height: 1.5; /* Améliorer la lisibilité */
   }
 
   .grid-2 {
@@ -12,7 +14,8 @@
   .project,
   .skills,
   .contact {
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
   }
 
   .section-2 {
@@ -36,6 +39,7 @@
 
   .skills {
     flex-direction: column;
+    padding: 10px;
   }
 
   .skills-wrapper {
@@ -87,12 +91,15 @@
   .project h2,
   .contact h2 {
     font-size: 1.4rem;
+    text-align: center; /* Centrer les titres */
   }
 
   .section-1 p,
   .section-2 p,
   .card p {
     font-size: 1rem;
+    text-align: justify; /* Justifier le texte */
+    padding: 0 10px; /* Ajouter un padding horizontal */
   }
 
   .back-to-top {
@@ -170,9 +177,19 @@
     height: 2.5rem;
   }
 
+  .barre-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
   .barre-nav a {
-    font-size: 0.9rem; /* Réduire la taille des liens */
-    padding: 10px 8px; /* Ajuster le padding */
+    font-size: 1rem; /* Taille uniforme pour les liens */
+    padding: 8px 12px; /* Ajuster le padding */
+    width: 100%; /* Prendre toute la largeur */
+    text-align: center; /* Centrer le texte */
   }
 }
 
