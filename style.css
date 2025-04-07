@@ -276,7 +276,7 @@
     margin: 0 5px; /* Ensure 5px margin on very small screens */
   }
 
-  .project-section .card {
+  .project-section {
     margin: 0 5px; /* Ensure 5px margin on very small screens for project cards */
   }
 }
