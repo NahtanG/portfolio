@@ -119,8 +119,9 @@
 
   .contact .logo_links {
     flex-direction: row; /* Align icons in a row */
-    justify-content: center; /* Center align the icons */
+    justify-content: flex-start; /* Align icons to the left */
     gap: 5px; /* Reduce spacing between icons */
+    margin-left: 10px; /* Add margin to center on the left */
   }
 
   .contact .logo_link {
@@ -247,8 +248,9 @@
 
   .contact .logo_links {
     flex-direction: row; /* Align icons in a row */
-    justify-content: center; /* Center align the icons */
+    justify-content: flex-start; /* Align icons to the left */
     gap: 4px; /* Further reduce spacing between icons */
+    margin-left: 10px; /* Add margin to center on the left */
   }
 
   .contact .logo_link {
@@ -282,8 +284,9 @@
 
   .contact .logo_links {
     flex-direction: row; /* Align icons in a row */
-    justify-content: center; /* Center align the icons */
+    justify-content: flex-start; /* Align icons to the left */
     gap: 8px; /* Adjust spacing between icons */
+    margin-left: 10px; /* Add margin to center on the left */
   }
 
   .contact .logo_link {
