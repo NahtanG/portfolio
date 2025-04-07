@@ -78,16 +78,17 @@
   }
 
   .skills .skills-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Display icons in 2 columns */
-    gap: 10px; /* Reduce spacing between icons */
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Change to flex layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    gap: 10px; /* Add spacing between icons */
+    justify-content: flex-start; /* Align icons to the start */
+    align-items: center; /* Center icons vertically */
   }
 
   .skills .icon-card {
-    width: 30px; /* Reduce icon size */
-    height: 30px;
+    width: 40px; /* Adjust icon size */
+    height: 40px;
     padding: 5px; /* Adjust padding for smaller icons */
   }
 
