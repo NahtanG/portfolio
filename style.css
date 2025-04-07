@@ -78,9 +78,9 @@
   }
 
   .skills .skills-wrapper {
-    display: grid; /* Change to grid layout */
+    display: grid; /* Use grid layout */
     grid-template-columns: repeat(3, 1fr); /* Display 3 icons per row */
-    gap: 10px; /* Add spacing between icons */
+    gap: 5px; /* Reduce spacing between icons */
     justify-content: center; /* Center the grid */
     align-items: center; /* Align icons vertically */
   }
@@ -95,9 +95,10 @@
   }
 
   .skills .icon-card {
-    width: 40px; /* Adjust icon size */
-    height: 40px;
-    padding: 5px; /* Adjust padding for smaller icons */
+    width: 35px; /* Reduce icon size */
+    height: 35px;
+    padding: 2px; /* Reduce padding for smaller icons */
+    margin: 0; /* Remove extra margin */
   }
 
   .file_list {
