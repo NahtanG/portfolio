@@ -124,12 +124,12 @@
   }
 
   .contact .logo_link {
-    width: 3rem; /* Reduce width */
-    height: 3rem; /* Reduce height */
+    width: 1rem; /* Reduce width */
+    height: 1rem; /* Reduce height */
   }
 
   .contact .logo_link img {
-    height: 80%; /* Adjust image size */
+    height: 50%; /* Adjust image size */
   }
 
   .logo_links {
@@ -139,8 +139,8 @@
   }
 
   .logo_link {
-    width: 7rem; /* Adjust logo size */
-    height: 3rem;
+    width: 2rem; /* Adjust logo size */
+    height: 1rem;
   }
 
   .nav-project {
