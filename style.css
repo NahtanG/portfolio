@@ -1,6 +1,18 @@
 @media (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+
   .grid-2 {
     grid-template-columns: 1fr;
+  }
+
+  .section-1,
+  .section-2,
+  .project,
+  .skills,
+  .contact {
+    padding: 5px;
   }
 
   .section-2 {
@@ -26,6 +38,14 @@
     flex-direction: column;
   }
 
+  .skills-wrapper {
+    flex-direction: column;
+  }
+
+  .file_list {
+    padding: 0 5px;
+  }
+
   .file_list a {
     width: 90%;
   }
@@ -49,9 +69,23 @@
     padding: 8px 12px;
   }
 
+  .profile_image {
+    width: 100px;
+    margin: auto;
+  }
+
+  .nom-prenom {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
   .section-1 h2,
   .section-2 h2,
-  .project h2 {
+  .project h2,
+  .contact h2 {
     font-size: 1.4rem;
   }
 
