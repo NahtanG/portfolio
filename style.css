@@ -233,6 +233,26 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .skills .skills-wrapper {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    ); /* Allow multiple icons per row */
+    gap: 10px; /* Add spacing between icons */
+    justify-content: center; /* Center the grid */
+    align-items: center; /* Align icons vertically */
+  }
+
+  .skills .icon-card {
+    width: 60px; /* Adjust icon size */
+    height: 60px;
+    padding: 5px; /* Adjust padding for smaller icons */
+    margin: 0; /* Remove extra margin */
+  }
+}
+
 /*barre de navigation*/
 .barre-nav {
   background-color: #333;
