@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
   body {
-    padding: 5px;
-    font-size: 1.2rem; /* Increase base font size for better readability */
+    padding: 10px;
+    font-size: 1.3rem; /* Increase base font size for better readability */
   }
 
   .grid-2 {
@@ -20,42 +20,42 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
   }
 
   .section-1 img.profile_image {
-    width: 80px; /* Reduce image size */
+    width: 100px; /* Reduce image size */
     height: auto; /* Maintain proportions */
   }
 
   .section-1 h2.nom-prenom {
-    font-size: 1.5rem; /* Increase font size for better visibility */
-    margin: 10px 0; /* Add vertical spacing */
+    font-size: 1.8rem; /* Increase font size for better visibility */
+    margin: 15px 0; /* Add vertical spacing */
   }
 
   .section-1 p {
-    font-size: 1.2rem; /* Increase paragraph font size */
-    line-height: 1.6; /* Improve readability */
+    font-size: 1.3rem; /* Increase paragraph font size */
+    line-height: 1.8; /* Improve readability */
   }
 
   .section-1 .download-button {
-    font-size: 1rem; /* Adjust button font size */
-    padding: 8px 12px; /* Adjust padding */
+    font-size: 1.1rem; /* Adjust button font size */
+    padding: 10px 15px; /* Adjust padding */
   }
 
   .section-2 {
-    width: 90%;
+    width: 95%;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
   }
 
   .section-2 h2 {
-    font-size: 1.6rem; /* Adjust heading size */
+    font-size: 1.8rem; /* Adjust heading size */
   }
 
   .section-2 p {
-    font-size: 1.2rem; /* Increase paragraph font size */
-    line-height: 1.6; /* Improve readability */
+    font-size: 1.3rem; /* Increase paragraph font size */
+    line-height: 1.8; /* Improve readability */
   }
 
   .project-section {
@@ -79,14 +79,14 @@
   .skills .skills-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Display icons in 2 columns */
-    gap: 15px; /* Add spacing between icons */
+    gap: 20px; /* Add spacing between icons */
     justify-content: center;
     align-items: center;
   }
 
   .skills .icon-card {
-    width: 50px; /* Adjust icon size */
-    height: 50px;
+    width: 60px; /* Adjust icon size */
+    height: 60px;
   }
 
   .file_list {
@@ -98,19 +98,19 @@
   }
 
   .contact {
-    padding: 10px;
+    padding: 15px;
     text-align: center;
   }
 
   .contact .logo_links {
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Increase spacing between logos */
+    gap: 20px; /* Increase spacing between logos */
   }
 
   .contact .logo_link {
-    width: 7rem; /* Adjust logo size */
-    height: 3rem;
+    width: 8rem; /* Adjust logo size */
+    height: 3.5rem;
   }
 
   .logo_links {
