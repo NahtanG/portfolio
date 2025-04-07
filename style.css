@@ -62,7 +62,6 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 0 5px; /* Ensure 5px margin on smaller screens */
   }
 
   .carousel {
@@ -278,7 +277,7 @@
   }
 
   .project-section {
-    margin: 0 5px; /* Ensure 5px margin on very small screens */
+    margin: 5px; /* Ensure 5px margin on very small screens for project cards */
   }
 }
 
@@ -323,7 +322,7 @@
   }
 
   .project-section {
-    margin: 0 5px; /* Ensure 5px margin on medium screens */
+    margin: 5px; /* Ensure 5px margin on medium screens for project cards */
   }
 }
 
@@ -874,7 +873,7 @@ nav:hover {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin: 0 5px; /* Add 5px margin to the left and right */
+  margin: 20px auto;
   padding: 20px;
   background-color: #1e1e1e;
   border-radius: 10px;
