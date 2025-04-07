@@ -236,6 +236,10 @@
   .content {
     padding: 5px;
   }
+
+  .card {
+    padding: 15px; /* Add 5px padding for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
@@ -260,6 +264,10 @@
 
   .contact .logo_link img {
     height: 50%; /* Adjust image size */
+  }
+
+  .card {
+    padding: 10px; /* Add 5px padding for very small screens */
   }
 }
 
@@ -296,6 +304,10 @@
 
   .contact .logo_link img {
     height: 70%; /* Adjust image size */
+  }
+
+  .card {
+    padding: 20px; /* Add 5px padding for medium screens */
   }
 }
 
@@ -750,7 +762,7 @@ nav:hover {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
-  padding: 20px;
+  padding: 25px; /* Increased padding by 5px */
   text-align: center;
   font-size: 1.2rem;
   transition:
