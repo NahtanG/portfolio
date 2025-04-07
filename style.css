@@ -241,6 +241,10 @@
     padding: 15px; /* Add 5px padding for smaller screens */
     margin: 0 5px; /* Ensure 5px margin on smaller screens */
   }
+
+  .project-section .card {
+    margin: 0 5px; /* Ensure 5px margin on smaller screens for project cards */
+  }
 }
 
 @media (max-width: 480px) {
@@ -270,6 +274,10 @@
   .card {
     padding: 10px; /* Add 5px padding for very small screens */
     margin: 0 5px; /* Ensure 5px margin on very small screens */
+  }
+
+  .project-section .card {
+    margin: 0 5px; /* Ensure 5px margin on very small screens for project cards */
   }
 }
 
@@ -311,6 +319,10 @@
   .card {
     padding: 20px; /* Add 5px padding for medium screens */
     margin: 0 5px; /* Ensure 5px margin on medium screens */
+  }
+
+  .project-section .card {
+    margin: 0 5px; /* Ensure 5px margin on medium screens for project cards */
   }
 }
 
@@ -867,6 +879,10 @@ nav:hover {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   max-width: 1200px;
+}
+
+.project-section .card {
+  margin: 0 5px; /* Add 5px margin to the sides for project cards */
 }
 
 .carousel {
