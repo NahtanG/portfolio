@@ -124,8 +124,12 @@
   }
 
   .contact .logo_link {
-    width: 8rem; /* Adjust logo size */
-    height: 3.5rem;
+    width: 5rem; /* Reduce width */
+    height: 2rem; /* Reduce height */
+  }
+
+  .contact .logo_link img {
+    height: 60%; /* Adjust image size */
   }
 
   .logo_links {
@@ -250,6 +254,15 @@
     height: 60px;
     padding: 5px; /* Adjust padding for smaller icons */
     margin: 0; /* Remove extra margin */
+  }
+
+  .contact .logo_link {
+    width: 6rem; /* Slightly larger width for higher resolution */
+    height: 2.5rem; /* Slightly larger height */
+  }
+
+  .contact .logo_link img {
+    height: 70%; /* Adjust image size */
   }
 }
 
