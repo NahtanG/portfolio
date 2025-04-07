@@ -243,7 +243,7 @@
   }
 
   .project-section {
-    margin: 0 5px; /* Ensure 5px margin on smaller screens for project cards */
+    margin: 5px; /* Ensure 5px margin on smaller screens for project cards */
   }
 }
 
@@ -277,7 +277,7 @@
   }
 
   .project-section {
-    margin: 0 5px; /* Ensure 5px margin on very small screens for project cards */
+    margin: 5px; /* Ensure 5px margin on very small screens for project cards */
   }
 }
 
@@ -322,7 +322,7 @@
   }
 
   .project-section {
-    margin: 0 5px; /* Ensure 5px margin on medium screens for project cards */
+    margin: 5px; /* Ensure 5px margin on medium screens for project cards */
   }
 }
 
