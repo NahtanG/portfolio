@@ -22,3 +22,14 @@ document.querySelectorAll('.carousel').forEach((carousel) => {
 
   updateCarousel(); // Initialize the carousel
 });
+
+const backToTopButton = document.querySelector('.back-to-top');
+if (backToTopButton) {
+  backToTopButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Empêche le comportement par défaut
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Défilement fluide
+    });
+  });
+}
