@@ -79,7 +79,10 @@
 
   .skills .skills-wrapper {
     display: grid; /* Use grid layout */
-    grid-template-columns: repeat(3, 1fr); /* Display 3 icons per row */
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(80px, 1fr)
+    ); /* Allow multiple icons per row */
     gap: 5px; /* Reduce spacing between icons */
     justify-content: center; /* Center the grid */
     align-items: center; /* Align icons vertically */
@@ -95,9 +98,9 @@
   }
 
   .skills .icon-card {
-    width: 35px; /* Reduce icon size */
-    height: 35px;
-    padding: 2px; /* Reduce padding for smaller icons */
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+    padding: 5px; /* Adjust padding for smaller icons */
     margin: 0; /* Remove extra margin */
   }
 
