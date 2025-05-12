@@ -252,6 +252,10 @@
   .project-section {
     margin: 5px; /* Ensure 5px margin on smaller screens for project cards */
   }
+
+  .pdf-container {
+    background-color: #fff; /* Add white background for better visibility */
+  }
 }
 
 @media (max-width: 480px) {
@@ -1101,6 +1105,10 @@ nav:hover {
 
   .experience-description {
     font-size: 13px;
+  }
+
+  .pdf-container {
+    background-color: #fff; /* Add white background for better visibility */
   }
 }
 
