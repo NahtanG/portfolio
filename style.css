@@ -1103,3 +1103,9 @@ nav:hover {
     font-size: 13px;
   }
 }
+
+.pdf-container {
+  overflow-x: auto;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
