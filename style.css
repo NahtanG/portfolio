@@ -1117,3 +1117,20 @@ nav:hover {
   margin: 20px 0;
   border: 1px solid #ccc;
 }
+
+.project-details ul.project-features,
+.project-details ul.project-techs {
+  margin: 0 0 10px 20px;
+  padding-left: 20px;
+  color: #b1b1b1;
+  font-size: 1.05rem;
+  text-align: left;
+  list-style: disc inside;
+}
+
+.project-details h4 {
+  margin: 10px 0 5px 0;
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: left;
+}
