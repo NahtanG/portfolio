@@ -1118,19 +1118,35 @@ nav:hover {
   border: 1px solid #ccc;
 }
 
-.project-details ul.project-features,
-.project-details ul.project-techs {
-  margin: 0 0 10px 20px;
-  padding-left: 20px;
+.project-details .project-description {
+  margin: 10px 0 15px 0;
+  text-align: left;
   color: #b1b1b1;
   font-size: 1.05rem;
-  text-align: left;
-  list-style: disc inside;
 }
 
-.project-details h4 {
+.project-details .project-description h4 {
   margin: 10px 0 5px 0;
   color: #fff;
   font-size: 1.1rem;
-  text-align: left;
+}
+
+.project-details .project-description ul {
+  margin: 0 0 10px 25px;
+  padding-left: 20px;
+  color: #b1b1b1;
+  font-size: 1.05rem;
+  list-style: disc inside;
+  display: block;
+}
+
+.project-details .project-description li {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  display: list-item;
+  margin-bottom: 2px;
 }
